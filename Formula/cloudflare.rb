@@ -1,16 +1,16 @@
 class Cloudflare < Formula
   desc "Cloudflare Dynamic DNS updater - Automatically updates DNS A records"
   homepage "https://github.com/wiebe-xyz/dynamic-dns"
-  version "0.0.23"
+  version "0.0.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://webwiebe.nl/brew/cloudflare-darwin-amd64.tar.gz"
-      sha256 "491cd4eedbd25df14ed643da1c4537b3306c3eb3b3ffc8800f17d3d65ca91bbc"
+      sha256 "eec7aef1c4c81371a4319cb26cbe17b8e3c9dae7bb1b076c3f21e7fba3622f8d"
     elsif Hardware::CPU.arm?
       url "https://webwiebe.nl/brew/cloudflare-darwin-arm64.tar.gz"
-      sha256 "bfad68b99accb80622f38934ac13f308a1c02ddcc241938fbe82cf46864a4f16"
+      sha256 "e8000f2f41921842915b900a8cd95a38d767201e7e756ce7ca99d42fa5e6e458"
     end
   end
 

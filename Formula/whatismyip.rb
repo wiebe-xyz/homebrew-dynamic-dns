@@ -1,16 +1,16 @@
 class Whatismyip < Formula
   desc "Simple utility to get your current public IP address"
   homepage "https://github.com/wiebe-xyz/dynamic-dns"
-  version "0.0.23"
+  version "0.0.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://webwiebe.nl/brew/whatismyip-darwin-amd64.tar.gz"
-      sha256 "1873d1f4242b33fd4b253f2f96afa26fa650a9e162063e6cdf48687582603b08"
+      sha256 "57add67e2c488c05ea203eb3307cdeb8ea4b99077b824e46e5dd94287c9a41c5"
     elsif Hardware::CPU.arm?
       url "https://webwiebe.nl/brew/whatismyip-darwin-arm64.tar.gz"
-      sha256 "f851e9419f7524b0282d7bdc3e67ee7308aee3740272f1c03e09f17e68aca58b"
+      sha256 "abe322d067b972638637376bb190992d7e3ec43ab91e994e9fe34875a515c3fb"
     end
   end
 
